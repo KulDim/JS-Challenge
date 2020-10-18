@@ -3,13 +3,11 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 .wrapper{
-    max-width: 600px;
+    max-width: 800px;
     margin: 100px auto;
     display: flex;
 }
-
 .actions{
     flex: 1;
     padding: 0 20px;
@@ -30,17 +28,14 @@
     cursor: pointer;
     border-radius: 5px;
 }
-
 .line-vertical{
     border-right: 1px dashed #747374;
     height: auto;
 }
-
 .select{
     flex: 1;
     padding: 0 20px;
 }
-
 #select{
     width: 100%;
     height: 21px;
@@ -53,18 +48,19 @@
     font-weight: 540;
     cursor: pointer;
 }
+#select:hover{
+    border-bottom: 1px solid #000000;
+}
 label{
     transition: .5s;
     position: absolute;
     cursor: pointer;
     top: 105px;
 }
-
-
 .pressed-select{
     transition: .5s;
     margin-left: 20px;
-    color: #3c84ff;
+    /* color: #3c84ff; */
     font-size: 15px;
     cursor: default;
     top: 80px;
@@ -73,7 +69,6 @@ label{
     transition: .5s;
     transform: rotate(180deg);
 }
-
 .item{
     display: inline;
 }
@@ -81,4 +76,43 @@ label{
     transition: .5s;
     float: right;
     padding: 5px 0;
+}
+.display-option{
+    transition: .2s;
+    overflow: auto;
+    box-shadow: none;
+    max-height: 100px;
+    margin: 10px 60px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0px black;
+    visibility: hidden;
+}
+.showing{
+    display: block;
+    visibility: visible;
+    transition: .5s;
+    margin: 10px 60px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0px black;
+    max-height: 150px;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.display-option::-webkit-scrollbar {width: 0;}
+.display-option .option{
+    padding: 10px;
+}
+.display-option .option:hover{
+    background-color: #ECEBEC;
+    cursor: pointer;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.loading:hover{
+    background-color: #fff;
+    cursor: default;
 }

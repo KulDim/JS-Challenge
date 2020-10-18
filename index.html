@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Challenge</title>
     <link rel="stylesheet" href="Style/main.css">
-    <script src="main.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="actions">
             <h1>Actions</h1>
             <ul>
-                <li><button>Open</button></li>
-                <li><button>Close</button></li>
+                <li id="open"><button>Open</button></li>
+                <li id="close"><button>Close</button></li>
                 <li><button>Set Selected index 5</button></li>
                 <li><button>Get Selected</button></li>
                 <li><button>Clear</button></li>
@@ -23,7 +22,16 @@
         <div class="line-vertical"></div>
         <div class="select">
             <div id="select"><label for="select" class="label">Select Technology</label><div class="item"></div><svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" role="presentation" class="vs__open-indicator"><path d="M9.211364 7.59931l4.48338-4.867229c.407008-.441854.407008-1.158247 0-1.60046l-.73712-.80023c-.407008-.441854-1.066904-.441854-1.474243 0L7 5.198617 2.51662.33139c-.407008-.441853-1.066904-.441853-1.474243 0l-.737121.80023c-.407008.441854-.407008 1.158248 0 1.600461l4.48338 4.867228L7 10l2.211364-2.40069z"></path></svg></div>
+            <div class="display-option">
+                <div class="loading"><img src="loading.svg"></div>
+
+
+
+                
+                <!-- <div class="option"></div> -->
+            </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

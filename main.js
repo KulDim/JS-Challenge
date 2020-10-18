@@ -1,22 +1,33 @@
-window.onload = () => {
+console.time('work speed')
+
     const pressed = document.querySelector('#select')
+    const label = document.querySelector('.label')
+    const reversal = document.querySelector('svg')
 
-
-    
  
-    pressed.addEventListener('click', event => {
+    pressed.addEventListener('click', event => {open()}, false)
+    document.addEventListener('click', event => {close()}, false)
+    
+
+    function open()
+    {
         event.stopPropagation()
-        document.querySelector('.label').classList.add('pressed-select')
-        document.querySelector('svg').classList.add('reversal')
-    }, false)
-
-
-
-    document.addEventListener('click', event => {
+        label.classList.add('pressed-select')
+        reversal.classList.add('reversal')
+        document.querySelector('.display-option').classList.add('showing')
+    }
+    function close()
+    {
         if(event.button !== 1)
         {
-            document.querySelector('.label').classList.remove('pressed-select')
-            document.querySelector('svg').classList.remove('reversal')
+            label.classList.remove('pressed-select')
+            reversal.classList.remove('reversal')
+            document.querySelector('.display-option').classList.remove('showing')
         }
-    }, false)
-}
+    }
+    
+
+console.timeEnd('work speed')
+
+
+
