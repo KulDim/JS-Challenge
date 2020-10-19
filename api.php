@@ -9,11 +9,26 @@ function key_($max)
 }
 $key_length = 15;
 $list = array(
-    key_($key_length) => array("label" => "javascript"),
-    key_($key_length) => array("label" => "javascript"),
-    key_($key_length) => array("label" => "javascript"),
-    key_($key_length) => array("label" => "javascript"),
-    key_($key_length) => array("label" => "javascript"),
+    array("id" => key_($key_length ), "label" => "javascript"),
+    array("id" => key_($key_length ), "label" => "Cpp"),
+    array("id" => key_($key_length ), "label" => "HTML"),
+    array("id" => key_($key_length ), "label" => "CSS"),
+    array("id" => key_($key_length ), "label" => "VADIM"),
+    array("id" => key_($key_length ), "label" => "javascript"),
+    array("id" => key_($key_length ), "label" => "Cpp"),
+    array("id" => key_($key_length ), "label" => "HTML"),
+    array("id" => key_($key_length ), "label" => "CSS"),
+    array("id" => key_($key_length ), "label" => "VADIM"),
+    array("id" => key_($key_length ), "label" => "javascript"),
+    array("id" => key_($key_length ), "label" => "Cpp"),
+    array("id" => key_($key_length ), "label" => "HTML"),
+    array("id" => key_($key_length ), "label" => "CSS"),
+    array("id" => key_($key_length ), "label" => "VADIM"),
+    array("id" => key_($key_length ), "label" => "javascript"),
+    array("id" => key_($key_length ), "label" => "Cpp"),
+    array("id" => key_($key_length ), "label" => "HTML"),
+    array("id" => key_($key_length ), "label" => "CSS"),
+    array("id" => key_($key_length ), "label" => "VADIM"),
 );
 
 echo json_encode($list);
